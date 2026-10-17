@@ -1,0 +1,38 @@
+.renda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  font-size: 1.25rem;
+}
+
+.renda-count,
+.renda-result {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.renda-start {
+  padding: 12px 32px;
+  font-size: 1.25rem;
+}
+
+/* スマホで連打しても、画面が拡大されたり文字が選択されたりしないようにする */
+.renda-tap {
+  width: 200px;
+  height: 200px;
+  border: none;
+  border-radius: 50%;
+  background: #f97316;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.renda-tap:active {
+  transform: scale(0.95);
+}

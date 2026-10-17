@@ -1,0 +1,9 @@
+{
+  "name": "minigamesuite",
+  "compatibility_date": "2026-10-18",
+  "assets": {
+    "directory": "./dist",
+    // /games/renda を直接開いても 404 にせず、index.html を返す（React Router が画面を出す）
+    "not_found_handling": "single-page-application"
+  }
+}
